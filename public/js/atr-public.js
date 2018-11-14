@@ -16,6 +16,7 @@ $(document).ready(function(){
     //sidebar search
     $(".sidebar-search-form label").html('<i class="fas fa-search"></i>');
 
-
+    //añadiendo target _blank a las redes sociales
+    $("#social-menu li a").attr('target', '_blank');
  
 });
