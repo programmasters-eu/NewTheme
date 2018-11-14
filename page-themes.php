@@ -35,7 +35,7 @@ get_header(); ?>
                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
                 </div>
                     <?php
-                        $image = wp_get_attachment_url(52);
+                        $image = ATR_DIR_URI . 'public/img/textura-1.png';
                         //var_dump($image);
                     ?>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="background-image: url('<?php echo $image; ?>')">

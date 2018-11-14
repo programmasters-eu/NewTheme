@@ -29,8 +29,8 @@
 
                         <!-----------textura para el content del blog------------------>
                         <?php
-                        //en cpanel->medios->textura-1 = id 52
-                            $background = wp_get_attachment_url(52);
+                        //en cpanel->medios->textura-1 
+                            $background = ATR_DIR_URI . 'public/img/textura-1.png';
                             //var_dump($background);
                         ?>
 
