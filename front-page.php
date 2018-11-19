@@ -98,7 +98,7 @@ get_header(); ?>
             //Aqui creare el WP_Query que mostrara las entradas de los post
             $args = array(
                 'post_type'         => 'post',
-                'posts_per_page'    => 6,
+                'posts_per_page'    => 3,
                 'orderby'           => 'date',
                 'order'             => 'DESC'
             );
@@ -109,18 +109,43 @@ get_header(); ?>
         <?php while ( $entradas->have_posts() ) : $entradas->the_post(); ?>
             <div class="section-post col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"><!--row-blog-->
 
-                
-                    <div class="row section-post-img">
-                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                    </div>
-                
+                <?php
+                    if ( has_post_thumbnail($post) ){ ?>
 
-                <div class="row section-post-content">
-                    <a href="<?php the_permalink(); ?>">
-                        <span class="text-center"><?php the_title('<h5>', '</h5>'); ?></span>
-                    </a>
-                    <span class="text-justify"><?php the_excerpt(); ?></span>
-                </div>
+                            <!--Blog-->
+                            <div class="row section-post-img">
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                            </div>
+                            
+
+                            <div class="row section-post-content">
+                                <a href="<?php the_permalink(); ?>">
+                                    <span class="text-center"><?php the_title('<h5>', '</h5>'); ?></span>
+                                </a>
+                                <span class="text-justify"><?php the_excerpt(); ?></span>
+                            </div>
+                            <!--/Blog-->
+
+                <?php
+                        }else{ ?>
+
+                            <!--Video blog-->
+                            <div class="row section-post-img embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" allowfullscreen src="<?php echo get_field('video'); ?>" frameborder="0"></iframe>
+                            </div>
+                            
+
+                            <div class="row section-post-content">
+                                <a href="<?php the_permalink(); ?>">
+                                    <span class="text-center"><?php the_title('<h5>', '</h5>'); ?></span>
+                                </a>
+                                <?php $content = get_field( 'texto_video_blog' ); ?>
+                                <span class="text-justify text-video-blog"><?php echo $content; ?></span>
+                            </div><!--/Video blog-->
+
+                <?php   
+                    }?>
+
             </div><!--/row-blog-->
 
         <?php endwhile; wp_reset_postdata(); ?>

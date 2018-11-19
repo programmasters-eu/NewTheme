@@ -319,7 +319,7 @@ class ATR_Public {
 
     public function atr_advanced_custom_fields(){
 
-        //para ver el ACF comentar la constante
+        //para ver el ACF comentar la constante define
         define( 'ACF_LITE', true );
 
         include_once ATR_DIR_PATH . 'helpers/advanced-custom-fields/acf.php';
@@ -616,7 +616,7 @@ class ATR_Public {
                         'key' => 'field_5be9958b64ab4',
                         'label' => 'video',
                         'name' => 'video',
-                        'type' => 'page_link',
+                        'type' => 'text',
                         'instructions' => 'Ponga aqui el enlace coreespondiente al video subido en youtube',
                         'post_type' => array (
                             0 => 'oembed_cache',
@@ -629,7 +629,7 @@ class ATR_Public {
                         'label' => 'texto_video_blog',
                         'name' => 'texto_video_blog',
                         'type' => 'wysiwyg',
-                        'instructions' => 'Escriba aqui el post del video o la descripcion',
+                        'instructions' => 'Escriba aqui una descripción corta del video máximo 4 lineas',
                         'default_value' => '',
                         'toolbar' => 'full',
                         'media_upload' => 'yes',
