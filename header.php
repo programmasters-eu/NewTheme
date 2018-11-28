@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="<?php bloginfo('description'); ?>">
+    <!--Etiquetas movile app IOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="NewTheme">
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.jpg">
+    <!--Etiquetas moviles app android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+    <meta name="application-name" content="NewTheme">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/icono.png">
 
     <title><?php wp_title('') ?><?php if(wp_title('',false)) { echo " : "; } ?><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
