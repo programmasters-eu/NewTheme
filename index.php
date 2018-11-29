@@ -54,7 +54,7 @@
                         }else { ?><!--Abrimos el else del if-->
 
                              <!--video blog-->
-                            <div class="row embed-responsive embed-responsive-16by9 image-home-blog">
+                            <div class="row video-blog">
                                 <iframe class="embed-responsive-item" allowfullscreen src="<?php echo get_field('video'); ?>" frameborder="0"></iframe>
                             </div>
 

@@ -70,7 +70,7 @@
                 <?php
                     }else { ?><!--video blog-->
 
-                        <div class="row embed-responsive embed-responsive-16by9 image-home-blog"><!--row-imagen-blog-->
+                        <div class="row video-blog"><!--row-imagen-blog-->
                             <iframe class="embed-responsive-item" allowfullscreen src="<?php echo get_field('video'); ?>" frameborder="0"></iframe>
                         </div><!--/row imagen-->
 

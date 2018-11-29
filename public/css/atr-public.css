@@ -95,6 +95,18 @@ div.image-home-blog{
     display: flex;
     margin-top: 20px;
 }
+div.video-blog{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    height: 490px;
+
+}
+div.video-blog iframe{
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+}
 div.description-blog p{
     color: #ffffff;
     text-transform: uppercase;
@@ -224,6 +236,9 @@ div.paginate-links a{
     color: #ffffff;
     padding-top: 30px;
     padding-bottom: 10px;
+}
+.sidebar-widgets p{
+    color: #ffffff;
 }
 
 /*category*/
@@ -421,6 +436,14 @@ footer div.row{
     }
     .contactme-page .background-form p{
         font-size: 16px;
+    }
+    /*video-blog*/
+    div.video-blog{
+        position: relative;
+        display: flex;
+        margin-top: 20px;
+        height: 260px;
+    
     }  
 }
 
@@ -458,6 +481,14 @@ footer div.row{
     /*page-contactme*/
     .contactme-page form table{
         margin: 0 10%;
+    }
+    /*video-blog*/
+    div.video-blog{
+        position: relative;
+        display: flex;
+        margin-top: 20px;
+        height: 320px;
+    
     } 
 }
 
@@ -482,6 +513,14 @@ footer div.row{
      /*page-contactme*/
      .contactme-page form table{
         margin: 0 10%;
+    }
+    /*video-blog*/
+    div.video-blog{
+        position: relative;
+        display: flex;
+        margin-top: 20px;
+        height: 380px;
+    
     }  
 }
 
@@ -497,6 +536,14 @@ footer div.row{
     }
     .sidebar-search-form label{
         margin-left: 230px;
+    }
+    /*video-blog*/
+    div.video-blog{
+        position: relative;
+        display: flex;
+        margin-top: 20px;
+        height: 440px;
+    
     }
 }
 
